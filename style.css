@@ -108,3 +108,29 @@ h1 {
         width: 100%;
     }
 }
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* allow text to align to top */
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+/* Make text expand and wrap nicely */
+.task span {
+    flex: 1; /* take remaining space */
+    margin-left: 10px;
+    word-break: break-word; /* break long words instead of overflowing */
+    white-space: normal; /* allow wrapping */
+}
+
+/* Buttons stay fixed to the right */
+.task-buttons {
+    display: flex;
+    gap: 5px;
+    flex-shrink: 0; /* prevent shrinking */
+}
+
